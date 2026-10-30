@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Strategy Call | T. Omer</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --accent-color: #2ea043;
+      --text-main: #c9d1d9;
+      --text-bright: #ffffff;
+      --border-color: #30363d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(46, 160, 67, 0.15);
+      color: #3fb950;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      color: var(--text-bright);
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    .subhead {
+      color: #8b949e;
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .main-grid {
+        grid-template-columns: 1fr 1.6fr;
+      }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    h2 {
+      color: var(--text-bright);
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+    }
+
+    .agenda-list {
+      list-style: none;
+    }
+
+    .agenda-list li {
+      margin-bottom: 16px;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .agenda-list li::before {
+      content: "✓";
+      color: var(--accent-color);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .calendar-container {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <span class="tag">Customer Success & Operations</span>
+      <h1>Book a Strategy Call with T. Omer</h1>
+      <p class="subhead">Select a convenient time slot below to discuss SaaS onboarding, churn mitigation, or customer operations alignment.</p>
+    </header>
+
+    <div class="main-grid">
+      <div class="card">
+        <h2>Meeting Overview</h2>
+        <ul class="agenda-list">
+          <li><strong>Customer Onboarding:</strong> Accelerating time-to-value and user activation pathways.</li>
+          <li><strong>Retention Strategy:</strong> Implementing proactive health indicators and churn mitigation.</li>
+          <li><strong>Account Operations:</strong> Standardizing success workflows and cross-functional handoffs.</li>
+          <li><strong>Role Fit:</strong> Alignment on Customer Success Manager / TAM opportunities.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="padding: 12px;">
+        <iframe class="calendar-container" src="https://calendly.com"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
